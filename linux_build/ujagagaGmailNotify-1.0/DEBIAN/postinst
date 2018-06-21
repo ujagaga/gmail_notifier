@@ -1,0 +1,20 @@
+#!/bin/sh
+# postinst script for ujagagaGmailNotify
+
+SHORTCUT_NAME=$HOME/.config/autostart/ujagagaGmailNotify.desktop
+
+echo "[Desktop Entry]" > $SHORTCUT_NAME
+echo "Encoding=UTF-8" >> $SHORTCUT_NAME
+echo "Type=Application" >> $SHORTCUT_NAME
+echo "Name=ujagagaGmailNotifyer" >> $SHORTCUT_NAME
+echo "Categories=Utility" >> $SHORTCUT_NAME
+echo "Comment='GMail checker using Google API'" >> $SHORTCUT_NAME
+echo "Exec=/opt/ujagagaGmailNotify/ujagagaGmailNotify" >> $SHORTCUT_NAME
+echo "StartupNotify=false" >> $SHORTCUT_NAME
+echo "Terminal=false" >> $SHORTCUT_NAME
+echo "Path=/opt/ujagagaGmailNotify" >> $SHORTCUT_NAME
+echo "Icon=/opt/ujagagaGmailNotify/logo.png" >> $SHORTCUT_NAME
+
+cp -f $SHORTCUT_NAME  /usr/share/applications/
+
+exit 0

@@ -1,0 +1,9 @@
+#!/bin/sh
+# this script runs after the package has been removed
+
+
+rm -f $HOME/.config/autostart/ujagagaGmailNotify.desktop
+rm -fr $HOME/.ujagagaGmailNotify/
+rm -f usr/share/applications/ujagagaGmailNotify.desktop
+
+exit 0

@@ -1,0 +1,9 @@
+Package: ujagagaGmailNotify
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Depends: mousepad
+Maintainer: Rada Berar <ujagaga13@gmail.com>
+Homepage: 
+Description: GMail checker using Google API and OAUTH
